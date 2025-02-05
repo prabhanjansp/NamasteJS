@@ -4,4 +4,6 @@ function b() {
 }
 
 console.log(window.a);
+console.log(this.a);
 console.log(a)
+console.log(window===this)
