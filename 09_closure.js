@@ -1,8 +1,14 @@
 function x(){
     var a=7;
     function y(){
-        console.log(a)
+        console.log(a) //100
     }
-    y();
+    // here we are accessing the reference to the variable a returned means the reference to the a persist
+    // concepts of stack memory
+    a=100;
+    // y();
+    return y;
 }
-x();
+var z=x();
+console.log(z);
+z();
