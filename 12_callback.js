@@ -17,13 +17,20 @@
  */
 // 1)
 
-setTimeout(function () {
-  console.log("first-timer");
-}, 5000);
-function x(y) {
-  console.log("x");
-  y()
+// setTimeout(function () {
+//   console.log("first-timer");
+// }, 5000);
+// function x(y) {
+//   console.log("x");
+//   y();
+// }
+// x(function y() {
+//   console.log("y");
+// });
+function attachEventListener() { //closure demo example of data encapsulation
+  let count = 0;
+  document.getElementById("clickMe").addEventListener("click", function xyz() {
+    console.log("Button clicked", ++count);
+  });
 }
-x(function y() {
-  console.log("y");
-});
+attachEventListener(); 
