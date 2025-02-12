@@ -14,3 +14,16 @@ const output2 = arr.map(binary);
 console.log(output);
 console.log(output1);
 console.log(output2);
+
+function isOdd(x) {
+  return x % 2;
+}
+function isEven(x) {
+  return x % 2===0;
+}
+function greaterThan4(x) {
+  return x>4;
+}
+const res = arr.filter(isOdd);console.log(res)
+const res1 = arr.filter(isEven);console.log(res1)
+const res3 = arr.filter(greaterThan4);console.log(res3)
